@@ -79,6 +79,10 @@ tr.key td.time{color:var(--momiji)}
 tr.pick td{background:var(--ai-soft)}
 td.stars{white-space:nowrap;color:var(--ginkgo);letter-spacing:1px}
 td.stars .off{color:var(--line)}
+.rec{color:var(--ginkgo);font-weight:600}
+td.num{white-space:nowrap;font-variant-numeric:tabular-nums;text-align:right}
+tr.total td{font-weight:700;background:var(--bg)}
+#fx{width:7em;font:inherit;padding:4px 8px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink);text-align:right}
 
 .note{margin-top:10px;padding:10px 14px;border-radius:8px;font-size:.9rem;background:var(--ginkgo-soft);border-left:3px solid var(--ginkgo)}
 .note b{color:var(--ginkgo)}
@@ -142,20 +146,29 @@ footer{margin-top:36px;color:var(--muted);font-size:.82rem}
     <li><a href="#food">식당</a></li>
     <li><a href="#usj">USJ 티켓</a></li>
     <li><a href="#bus">공항버스</a></li>
+    <li><a href="#budget">경비</a></li>
     <li><a href="#check">준비물</a></li>
   </ul>
 </nav>
 
 <section id="d1">
-  <h2><span class="date">11/26 목</span> 도착하고 바로 숙소로</h2>
+  <h2><span class="date">11/26 목</span> 인천 출국, 오사카 도착</h2>
   <p class="lead">입국 후 제1터미널 1층 밖 리무진버스 <b>5번 승강장</b>(大阪駅前・茶屋町 방면)에서 우메다행 탑승</p>
   <p class="lead">참고 블로그: <a href="https://blog.naver.com/thgusdl7317/224408010239" target="_blank" rel="noopener">간사이공항 리무진버스 타는 법 (네이버 블로그)</a></p>
   <div class="table-scroll"><table>
     <thead><tr><th>시간</th><th>일정</th><th>메모</th></tr></thead>
     <tbody>
+      <tr><td class="time">18:00</td><td class="what">인천공항 제2터미널 도착</td><td class="memo">출발 2시간 40분 전. 온라인 체크인·스마트패스 미리 해 두기</td></tr>
+      <tr><td class="time">18:20</td><td class="what">짐 부치기</td><td class="memo">온라인 체크인했으면 셀프 백드롭. 사전 좌석 지정 완료</td></tr>
+      <tr><td class="time">18:40</td><td class="what">보안 검색, 출국 심사</td><td class="memo">스마트패스 전용 레인. 출국 심사는 실물 여권 필요</td></tr>
+      <tr class="key"><td class="time">19:00</td><td class="what">면세품 인도장 (톰포드 선글라스)</td><td class="memo">출국 심사 뒤 면세 구역 안. 여권, 탑승권, 교환권 필요. 저녁엔 대기가 길 수 있어요</td></tr>
+      <tr><td class="time">19:30</td><td class="what">간단히 저녁, 면세점 구경</td><td class="memo">면세품은 기내에 들고 타요</td></tr>
+      <tr><td class="time">20:00</td><td class="what">탑승구 도착</td><td class="memo">보통 출발 40분 전 탑승 시작</td></tr>
+      <tr class="key"><td class="time">20:40</td><td class="what">인천공항 출발</td><td class="memo"></td></tr>
       <tr class="key"><td class="time">22:25</td><td class="what">간사이공항 제1터미널 도착</td><td class="memo">입국심사, 짐 찾기. 도착 로비(1층)에서 버스 표지판 따라 건물 밖으로</td></tr>
-      <tr><td class="time">23:00</td><td class="what">리무진버스 탑승</td><td class="memo">5번 승강장 바로 뒤 매표기에서 오사카역앞(大阪駅前, 우메다)행 승차권 구매(한국어 지원, 1,800엔). 캐리어는 직원에게 맡기고 짐표 받기. 23:00 / 23:20 / 23:45 중 탑승. 승강장 번호는 현장 안내판으로 한 번 더 확인</td></tr>
+      <tr><td class="time">23:00</td><td class="what">리무진버스 탑승</td><td class="memo">5번 승강장 바로 뒤 매표기에서 오사카역앞(大阪駅前, 우메다)행 승차권 구매(한국어 지원, 1,800엔). 매표기 카드 결제가 안 되면 표 없이 타서 버스 안 단말기에 이코카나 카드를 터치해도 돼요. 캐리어는 직원에게 맡기고 짐표 받기. 23:00 / 23:20 / 23:45 중 탑승. 승강장 번호는 현장 안내판으로 한 번 더 확인</td></tr>
       <tr><td class="time">0시 전후</td><td class="what">한큐산반가이 하차, 호텔 체크인</td><td class="memo">늦은 버스는 호텔 앞에 안 서요. 한큐산반가이에서 걸어서 이동</td></tr>
+      <tr><td class="time">선택</td><td class="what">야식</td><td class="memo"><span class="rec">★★ 이치란 한큐히가시도리점</span> (새벽 6시까지, 도보 10~15분) 또는 호텔 1층 패밀리마트</td></tr>
     </tbody>
   </table></div>
 
@@ -179,14 +192,14 @@ footer{margin-top:36px;color:var(--muted);font-size:.82rem}
     <thead><tr><th>시간</th><th>일정</th><th>메모</th></tr></thead>
     <tbody>
       <tr><td class="time">7:45</td><td class="what">기상, 준비</td><td class="memo">USJ 앱에 티켓 등록됐는지 확인. 편한 신발, 보조배터리</td></tr>
-      <tr><td class="time">8:00</td><td class="what">간단한 아침</td><td class="memo">호텔 1층 패밀리마트나 근처 카페. 아점을 먹을 거라 가볍게</td></tr>
+      <tr><td class="time">8:00</td><td class="what">간단한 아침</td><td class="memo"><span class="rec">★ 신파치 식당 한큐 우메다점</span> (7시 오픈, 생선구이 정식) 또는 호텔 1층 패밀리마트. 아점을 먹을 거라 가볍게</td></tr>
       <tr class="key"><td class="time">8:30</td><td class="what">호텔 출발 → 오사카성 (택시)</td><td class="memo">9층 프런트에 택시 요청 또는 GO 앱. 목적지 「大阪城天守閣」. 약 20분, 3,000~3,500엔</td></tr>
       <tr><td class="time">8:50</td><td class="what">천수각 앞 도착</td><td class="memo">개관 전에 천수각 외관 사진 먼저</td></tr>
       <tr class="key"><td class="time">9:00</td><td class="what">천수각 입장</td><td class="memo">입장료 1,200엔. 엘리베이터로 올라가 꼭대기 전망대부터 보고 내려오며 관람</td></tr>
       <tr><td class="time">9:50</td><td class="what">천수각 주변 산책</td><td class="memo">단풍, 석성·해자 사진. 벤치에서 잠깐 쉬기</td></tr>
       <tr><td class="time">10:15</td><td class="what">오사카조코엔역으로 이동</td><td class="memo">공원 안을 걸어서 약 15~20분</td></tr>
       <tr class="key"><td class="time">10:40</td><td class="what">오사카조코엔역 → 유니버설시티역</td><td class="memo">JR 순환선 → 니시쿠조역에서 유메사키선 환승(직통 열차면 환승 없음). 약 30~35분, 이코카</td></tr>
-      <tr><td class="time">11:15</td><td class="what">유니버설 시티워크에서 아점</td><td class="memo">역에서 파크 가는 길의 식당가. 앉아서 충분히 쉬기</td></tr>
+      <tr><td class="time">11:15</td><td class="what">유니버설 시티워크에서 아점</td><td class="memo"><span class="rec">★★★ 규카츠 교토 가츠규 유니버설 시티워크점</span> (10시 오픈). 토요일 점심도 규카츠라 겹치면 시티워크의 다른 식당으로. 앉아서 충분히 쉬기</td></tr>
       <tr><td class="time">11:50</td><td class="what">입구 앞 지구본 사진</td><td class="memo">파크 입구 앞 대표 포토존</td></tr>
       <tr class="key"><td class="time">12:00</td><td class="what">USJ 입장</td><td class="memo">앱의 티켓 QR로 입장. 앱에서 닌텐도 월드 14:00 확약권 표시 확인</td></tr>
       <tr><td class="time">12:10</td><td class="what">할리우드 거리 산책</td><td class="memo">크리스마스 장식, 거리 사진</td></tr>
@@ -210,24 +223,26 @@ footer{margin-top:36px;color:var(--muted);font-size:.82rem}
 
 <section id="d3">
   <h2><span class="date">11/28 토</span> 아라시야마, 기요미즈데라 야간개장</h2>
-  <p class="lead">오전 아라시야마, 낮에 호텔에서 쉬고, 해 질 무렵 기요미즈데라 야간 특별배관. 우메다↔교토가와라마치는 한큐 특급으로 환승 없이 약 45분</p>
+  <p class="lead">오전 아라시야마 → 우메다로 돌아와 알펜과 점심 → 호텔 휴식 → 기요미즈데라 야간 특별배관 → 기온 저녁. 우메다↔교토가와라마치는 한큐 특급으로 환승 없이 약 45분</p>
   <div class="table-scroll"><table>
     <thead><tr><th>시간</th><th>일정</th><th>메모</th></tr></thead>
     <tbody>
       <tr class="key"><td class="time">8:00</td><td class="what">한큐 오사카우메다역 출발</td><td class="memo">가쓰라역에서 아라시야마선 환승, 약 45분, 이코카</td></tr>
       <tr><td class="time">8:50</td><td class="what">한큐 아라시야마역 도착</td><td class="memo">도게츠교 건너 대나무숲까지 걸어서 약 20분</td></tr>
       <tr><td class="time">9:15</td><td class="what">치쿠린 대나무숲</td><td class="memo">사진 포함 약 35분</td></tr>
-      <tr><td class="time">9:50</td><td class="what">텐류지 정원 (북문으로 입장)</td><td class="memo">대나무숲 길과 바로 붙어 있어요. 정문 쪽으로 나오면 도게츠교 방향</td></tr>
-      <tr><td class="time">10:45</td><td class="what">도게츠교 산책</td><td class="memo">강변 단풍</td></tr>
-      <tr><td class="time">11:15</td><td class="what">점심</td><td class="memo">붐비기 전에</td></tr>
-      <tr class="key"><td class="time">12:15</td><td class="what">한큐 아라시야마역 → 오사카우메다역</td><td class="memo">가쓰라역 환승, 약 45분</td></tr>
-      <tr><td class="time">13:15</td><td class="what">호텔에서 휴식</td><td class="memo">약 1시간 45분. 충전, 두꺼운 격옷 챙기기</td></tr>
-      <tr class="key"><td class="time">15:00</td><td class="what">한큐 오사카우메다역 → 교토가와라마치역</td><td class="memo">한큐 특급, 환승 없이 약 45분</td></tr>
-      <tr class="key"><td class="time">15:50</td><td class="what">가와라마치 → 기요미즈데라 (택시 또는 도보)</td><td class="memo">아래 두 가지 동선 중 당일 컨디션에 따라 선택. 버스는 비추천</td></tr>
-      <tr><td class="time">16:20</td><td class="what">기요미즈자카 구경, 노을</td><td class="memo">절 앞 비탈길 가게 구경, 간식</td></tr>
+      <tr><td class="time">9:50</td><td class="what">텐류지 정원 (북문으로 입장)</td><td class="memo">대나무숲 길과 바로 붙어 있어요. 10:35엔 정문으로 나오기</td></tr>
+      <tr><td class="time">10:40</td><td class="what">도게츠교 건너며 사진</td><td class="memo">역 가는 길이 곧 산책 코스. 5~10분. 배고프면 간식</td></tr>
+      <tr class="key"><td class="time">11:00</td><td class="what">한큐 아라시야마역 → 오사카우메다역</td><td class="memo">가쓰라역 환승, 약 45분. 10~15분 간격이라 놓쳐도 다음 열차</td></tr>
+      <tr class="key"><td class="time">11:50</td><td class="what">Alpen OSAKA (HOKA 쇼핑)</td><td class="memo">한큐 오사카우메다역 동쪽(차야마치) 도보 1분, 1층 러닝화. 약 50분</td></tr>
+      <tr class="key"><td class="time">12:40</td><td class="what">치이카와랜드 → 키디랜드</td><td class="memo">둘 다 한큐 오사카우메다역 바로 아래 한큐산반가이(치이카와랜드 남관, 키디랜드 북관 B1~1F). 약 40분. 줄이 길면 키디랜드 먼저</td></tr>
+      <tr class="key"><td class="time">13:20</td><td class="what">점심: 규카츠 교토 가츠규 링크스우메다점</td><td class="memo"><span class="rec">★★★ 규카츠 교토 가츠규 링크스우메다점</span>. 호텔 건물 8층. 점심 피크가 지나 대기가 짧아요</td></tr>
+      <tr><td class="time">14:20</td><td class="what">호텔에서 휴식</td><td class="memo">약 1시간 50분. 산 물건 두고, 충전, 두꺼운 겉옷 챙기기</td></tr>
+      <tr class="key"><td class="time">16:15</td><td class="what">한큐 오사카우메다역 → 교토가와라마치역</td><td class="memo">한큐 특급, 환승 없이 약 45분. 정체가 걱정되면 16:00 출발</td></tr>
+      <tr class="key"><td class="time">17:00</td><td class="what">가와라마치 → 고조자카 (택시)</td><td class="memo">아래 택시 타는 법 참고. 약 10~15분. 버스는 비추천</td></tr>
+      <tr><td class="time">17:15</td><td class="what">기요미즈자카 따라 절 입구로</td><td class="memo">구경 없이 바로, 약 10분 오르막</td></tr>
       <tr class="key"><td class="time">17:30</td><td class="what">기요미즈데라 야간 특별배관</td><td class="memo">예약 불필요, 입장료 500엔(작년 기준). 약 1시간</td></tr>
-      <tr><td class="time">18:40</td><td class="what">산넨자카 → 니넨자카 내려오기</td><td class="memo">밤 돌길 분위기. 가게는 닫았을 수 있어요. 계단 조심</td></tr>
-      <tr><td class="time">19:15</td><td class="what">기온에서 저녁 식사</td><td class="memo">미리 후보 몇 곳 정해두기</td></tr>
+      <tr><td class="time">18:30</td><td class="what">산넨자카 → 니넨자카 → 야사카 신사 → 기온</td><td class="memo">구경하며 한 방향으로 죽 내려오기. 밤 돌길, 계단 조심</td></tr>
+      <tr><td class="time">19:15</td><td class="what">기온에서 저녁 식사</td><td class="memo">스시: <span class="rec">★★★ 다이쇼 스시 기온</span> (23시까지) · 장어: <span class="rec">★★★ 우나기 요다이메 키쿠카와</span> (22시까지), <span class="rec">★★ 교우나와 기온야사카</span> (내려오는 길, 21:30까지) · 덴푸라: <span class="rec">★★ 텐노메시</span></td></tr>
       <tr class="key"><td class="time">20:30</td><td class="what">교토가와라마치역 → 오사카우메다역</td><td class="memo">한큐 특급, 약 45분</td></tr>
       <tr><td class="time">21:30</td><td class="what">호텔 도착</td><td class="memo"></td></tr>
     </tbody>
@@ -257,14 +272,14 @@ footer{margin-top:36px;color:var(--muted);font-size:.82rem}
   <div class="table-scroll"><table>
     <thead><tr><th>시간</th><th>일정</th><th>메모</th></tr></thead>
     <tbody>
-      <tr><td class="time">15:50</td><td class="what">교토가와라마치역 → 시조도리 따라 동쪽으로</td><td class="memo">가모가와 다리 건너 기온 거리, 평지</td></tr>
-      <tr><td class="time">16:05</td><td class="what">야사카 신사</td><td class="memo">시조도리 끝의 빨간 누문</td></tr>
-      <tr><td class="time">16:20</td><td class="what">니넨자카 → 산넨자카</td><td class="memo">가게 열려 있을 때 구경·간식. 계단 구간 있음</td></tr>
-      <tr><td class="time">17:10</td><td class="what">기요미즈자카 → 절 입구</td><td class="memo">마지막 오르막</td></tr>
-      <tr class="key"><td class="time">17:30</td><td class="what">야간 특별배관 입장</td><td class="memo"></td></tr>
+      <tr><td class="time">16:55</td><td class="what">교토가와라마치역 → 시조도리 따라 동쪽으로</td><td class="memo">가모가와 다리 건너 기온 거리, 평지</td></tr>
+      <tr><td class="time">17:10</td><td class="what">야사카 신사</td><td class="memo">시조도리 끝의 빨간 누문</td></tr>
+      <tr><td class="time">17:20</td><td class="what">니넨자카 → 산넨자카</td><td class="memo">멈추지 않고 올라가기. 계단 구간 있음</td></tr>
+      <tr><td class="time">17:40</td><td class="what">기요미즈자카 → 절 입구</td><td class="memo">마지막 오르막</td></tr>
+      <tr class="key"><td class="time">17:45</td><td class="what">야간 특별배관 입장</td><td class="memo">내려올 때도 같은 길이라, 기본은 택시(A) 추천</td></tr>
     </tbody>
   </table></div>
-  <div class="note"><b>참고</b> 기요미즈데라 가을 야간 특별배관은 올해 11/21~30 예정, 작년 기준 17:30~21:00(접수 마감). 출발 전 공식 홈페이지에서 날짜와 시간 확인. 알펜과 공중정원은 일요일 오전으로 옮김.</div>
+  <div class="note"><b>참고</b> 기요미즈데라 가을 야간 특별배관은 올해 11/21~30 예정, 작년 기준 17:30~21:00(접수 마감). 출발 전 공식 홈페이지에서 날짜와 시간 확인. 알펜은 토요일 낮, 공중정원과 유니클로는 일요일 오전.</div>
 </section>
 
 <section id="d4">
@@ -278,11 +293,11 @@ footer{margin-top:36px;color:var(--muted);font-size:.82rem}
   <div class="table-scroll"><table>
     <thead><tr><th>시간</th><th>일정</th><th>메모</th></tr></thead>
     <tbody>
-      <tr><td class="time">8:15</td><td class="what">아침 식사</td><td class="memo"></td></tr>
+      <tr><td class="time">8:15</td><td class="what">아침 식사</td><td class="memo"><span class="rec">★ 신파치 식당 한큐 우메다점</span> 또는 호텔 1층 패밀리마트</td></tr>
       <tr><td class="time">9:10</td><td class="what">체크아웃</td><td class="memo">짐은 프런트에 맡기기</td></tr>
-      <tr><td class="time">9:30</td><td class="what">우메다 스카이빌딩 공중정원 (선택)</td><td class="memo">간사이 조이 패스. 9:30 개장, 호텔에서 도보 약 10분. 30분 정도만. 힘들면 요도바시나 루쿠아(조이 패스 쿠폰)로 대체</td></tr>
-      <tr class="key"><td class="time">10:00</td><td class="what">Alpen OSAKA (HOKA 쇼핑)</td><td class="memo">10:00 개점, 1층 러닝화. 모델·사이즈 미리 정해가기</td></tr>
-      <tr><td class="time">10:45</td><td class="what">호텔에서 짐 찾기</td><td class="memo"></td></tr>
+      <tr><td class="time">9:30</td><td class="what">우메다 스카이빌딩 공중정원</td><td class="memo">간사이 조이 패스. 9:30 개장, 호텔에서 도보 약 10분. 약 40분</td></tr>
+      <tr class="key"><td class="time">10:20</td><td class="what">유니클로 우메다</td><td class="memo">호텔 건물 링크스우메다 1~2층, 10:00 개점. 면세는 여권 필요</td></tr>
+      <tr><td class="time">10:50</td><td class="what">호텔에서 짐 찾기</td><td class="memo">정류장까지 도보 4분</td></tr>
       <tr class="key"><td class="time">11:00</td><td class="what">한큐산반가이에서 리무진버스</td><td class="memo">12:00 제1터미널 도착. 늦어도 11:15 버스</td></tr>
       <tr><td class="time">12:00</td><td class="what">간사이공항 제1터미널</td><td class="memo">체크인, 출국심사</td></tr>
       <tr class="key"><td class="time">14:50</td><td class="what">간사이공항 출발</td><td class="memo">16:50 도착</td></tr>
@@ -441,6 +456,71 @@ footer{margin-top:36px;color:var(--muted);font-size:.82rem}
     </tbody>
   </table></div>
   <div class="note"><b>참고</b> 도로 사정으로 늦어질 수 있어요. 출발 전 <a href="https://www.hankyu-kankobus.co.jp/limousine/timetable/UM/" target="_blank" rel="noopener">공식 시간표</a>에서 한 번 더 확인하세요.</div>
+</section>
+
+<section id="budget">
+  <h2>여행 경비</h2>
+  <p class="lead">2인 기준. 이미 결제한 비용과 현지에서 쓸 예상 비용</p>
+
+  <h3 style="font-size:1rem;margin:16px 0 8px">결제 완료</h3>
+  <div class="table-scroll"><table>
+    <thead><tr><th>항목</th><th>금액</th><th>메모</th></tr></thead>
+    <tbody>
+      <tr><td class="what">항공권</td><td class="num">863,800원</td><td class="memo">왕복, 간사이공항 제1터미널</td></tr>
+      <tr><td class="what">사전 좌석 지정</td><td class="num">68,000원</td><td class="memo">항공권 추가 요금</td></tr>
+      <tr><td class="what">숙소</td><td class="num">868,989원</td><td class="memo">호텔 한큐 레스파이어 오사카, 3박</td></tr>
+      <tr><td class="what">USJ 입장권</td><td class="num">296,800원</td><td class="memo">클룩. 스튜디오 패스 + 닌텐도 월드 + 푸드 바우처 + 간사이 조이 패스</td></tr>
+      <tr><td class="what">여행자보험</td><td class="num">22,730원</td><td class="memo">카카오페이</td></tr>
+      <tr class="total"><td class="what">합계</td><td class="num">2,120,319원</td><td class="memo"></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 style="font-size:1rem;margin:20px 0 8px">현지 예상 경비 (쇼핑 제외)</h3>
+  <div class="table-scroll"><table>
+    <thead><tr><th>항목</th><th>금액</th><th>메모</th></tr></thead>
+    <tbody>
+      <tr><td class="what">공항 리무진버스</td><td class="num">7,200엔</td><td class="memo">1,800엔 × 왕복 × 2명</td></tr>
+      <tr><td class="what">교통</td><td class="num">9,500엔</td><td class="memo">오사카성 택시, JR, 한큐 왕복 2번, 기요미즈데라 택시</td></tr>
+      <tr><td class="what">입장료</td><td class="num">4,500엔</td><td class="memo">오사카성 천수각, 텐류지 정원, 기요미즈데라 야간개장</td></tr>
+      <tr><td class="what">식비</td><td class="num">37,000엔</td><td class="memo">목 야식 ～ 일 아침</td></tr>
+      <tr><td class="what">여유분</td><td class="num">5,000엔</td><td class="memo">음료, 편의점 등</td></tr>
+      <tr class="total"><td class="what">합계</td><td class="num">63,200엔</td><td class="memo">현금 3~4만 엔 + 나머지 트래블월렛</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 style="font-size:1rem;margin:20px 0 8px">환전·충전 내역</h3>
+  <div class="table-scroll"><table>
+    <thead><tr><th>항목</th><th>엔화</th><th>원화</th><th>메모</th></tr></thead>
+    <tbody>
+      <tr><td class="what">트래블월렛 충전</td><td class="num">10,000엔</td><td class="num">84,589원</td><td class="memo">100엔당 약 845.89원</td></tr>
+      <tr class="total"><td class="what">준비 완료</td><td class="num">10,000엔</td><td class="num">84,589원</td><td class="memo">현지 예상 경비까지 약 53,200엔 더 필요 (쇼핑 제외)</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 style="font-size:1rem;margin:20px 0 8px">총 예상 경비 (원화)</h3>
+  <div class="table-scroll"><table>
+    <tbody>
+      <tr><td class="what">환율 (100엔당)</td><td class="num"><input id="fx" type="number" inputmode="decimal" min="0" step="0.01" value="845.89" placeholder="예: 900" aria-label="100엔당 원화 환율"> 원</td></tr>
+      <tr><td class="what">현지 예상 경비</td><td class="num" id="fx-local">-</td></tr>
+      <tr class="total"><td class="what">결제 완료 + 현지 예상</td><td class="num" id="fx-total">-</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><b>참고</b> 환율은 트래블월렛 충전 환율(845.89원)로 넣어 두었고, 바꾸면 이 기기에 저장돼요. 쇼핑비(HOKA 한 켤레 약 2~3만 엔, 치이카와·유니클로 등)는 따로 더하세요.</div>
+  <script>
+  (function(){
+    var KEY='trip-fx-v1', PAID=2120319, YEN=63200;
+    var inp=document.getElementById('fx'), o1=document.getElementById('fx-local'), o2=document.getElementById('fx-total');
+    function fmt(n){ return Math.round(n).toLocaleString('ko-KR')+'원'; }
+    function calc(){
+      var r=parseFloat(inp.value);
+      if(!r || r<=0){ o1.textContent='-'; o2.textContent='-'; return; }
+      var l=YEN*r/100; o1.textContent=fmt(l); o2.textContent=fmt(PAID+l);
+    }
+    try{ var v=localStorage.getItem(KEY); if(v) inp.value=v; }catch(e){}
+    inp.addEventListener('input', function(){ try{ localStorage.setItem(KEY, inp.value); }catch(e){} calc(); });
+    calc();
+  })();
+  </script>
 </section>
 
 <section id="check">
