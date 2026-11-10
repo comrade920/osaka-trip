@@ -104,12 +104,29 @@ a{color:var(--ai)}
 .mapshot figcaption{font-size:.82rem;color:var(--muted);padding:6px 4px 0}
 footer{margin-top:36px;color:var(--muted);font-size:.82rem}
 
+/* 폰: 표를 한 줄씩 카드처럼 쌓기 (메모는 아래 줄에 넓게) */
+td,th{word-break:keep-all;overflow-wrap:break-word}
+@media (max-width:600px){
+  table{min-width:0;font-size:.92rem}
+  thead{display:none}
+  table,tbody{display:block}
+  tr{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:10px;row-gap:2px;padding:10px 12px;border-bottom:1px solid var(--line)}
+  tbody tr:last-child{border-bottom:0}
+  td{display:block;padding:0;border:0;width:auto}
+  td.time{width:auto;min-width:3.6em}
+  td.what{flex:1 1 55%;min-width:0}
+  td:not([class]){color:var(--muted);font-size:.85rem}
+  td.num{text-align:left}
+  td.memo{order:9;flex:1 1 100%;font-size:.88rem;line-height:1.55}
+  tr:has(td.time) td.memo{padding-left:calc(3.6em + 10px)}
+  tr.pick,tr.pick td{background:var(--ai-soft)}
+  tr.total,tr.total td{background:var(--bg)}
+  #bus td.time+td::before{content:"→ "}
+}
 @media (max-width:480px){
   h1{font-size:1.3rem}
   .leg .t{font-size:1.35rem}
   .leg{padding:12px 14px}
-  td.time{width:72px}
-  th,td{padding:9px 10px}
 }
 </style>
 </head>
